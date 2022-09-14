@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Web TI Malam</title>
+	<link rel="icon" type="image/x-png" href="/Asset/zyro-image.png"/>
+</head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<!-- boxicon cdn link -->
+<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<!-- <script src="/javascript/script.js"></script> -->
+
+<body>
+	<div class="sidebar">
+		<div class="logo_content">
+			<div class="logo">
+				<i class='bx bxl-tumblr'></i>
+				<div class="logo_name">TI MALAM</div>
+			</div>
+			<i class='bx bx-menu' id='btn'></i>
+		</div>
+		<header></header>
+		<ul class="nav_list">
+			<li>
+				<a href="#">
+					<i class='bx bx-search'></i>
+					<input type="text" placeholder="search">
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class='bx bx-home-alt-2'></i>
+					<span class="link_name">HomePage</span>
+				</a>
+				<span class="tools">Home</span>
+			<li>
+				<a href="/About">
+					<i class='bx bxs-user-rectangle'></i>
+					<span class="link_name">ABOUT</span>
+				</a>
+				<span class="tools">About</span>
+			<li>
+				<a href="/Gallery">
+					<i class='bx bx-photo-album'></i>
+					<span class="link_name">GALLERY</span>
+				</a>
+				<span class="tools">Gallery</span>
+			<li>
+				<a href="/Mahasiswa">
+					<i class='bx bx-user-circle'></i>
+					<span class="link_name">MAHASISWA</span>
+				</a>
+				<span class="tools">Mahasiswa</span>
+			</li>
+			</li>
+			</li>
+			</li>
+		</ul>
+		<div style="margin-left:25%;padding:1px 16px;height:1000px;"></div>
+		<h1></h1>
+
+		<div class="profile_content">
+			<div class="profile">
+				<div class="profile_detail">
+					<img src="/Asset/zyro-image.png" alt="logo_kampus"></a>
+				</div>
+				<i class='bx bx-log-out' id="log_out"></i>
+			</div>
+		</div>
+	</div>
+	<div class="home_page">
+		<div class="text">HomePage</div>
+	</div>
+	<script>
+		let btn = document.querySelector("#btn");
+		let sidebar = document.querySelector(".sidebar");
+		let searchBtn = document.querySelector("bx-search");
+
+		btn.onclick = function () {
+			sidebar.classList.toggle("active");
+		}
+		searchBtn.onclick = function () {
+			sidebar.classList.toggle("active");
+		}
+	</script>
+	
+</body>
+
+</html>
